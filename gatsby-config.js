@@ -1,4 +1,5 @@
 module.exports = {
+				pathPrefix: '/gatsbyjs',
 				plugins: [
 								{
 												resolve: `gatsby-plugin-manifest`,
@@ -20,11 +21,10 @@ module.exports = {
 																fieldName: 'github',
 																url: 'https://api.github.com/graphql',
 																headers: {
-																				Authorization: `bearer ecf6c9721bf59a1f99c6e8198af1d0c5424e2027`,
+																				Authorization: `bearer f063f873e463180a01c9c53051506918ee2973f7`,
 																},
 																fetchOptions: {},
 												},
 								},
-
 				],
 }
