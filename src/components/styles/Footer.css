@@ -1,0 +1,34 @@
+.footer{
+				/*height: 100pt;*/
+				display: flex;
+				justify-content: center;
+				border-top: 1px solid #c8c6c7;
+				margin-top: 2rem;
+}
+
+.div1{
+				display: flex;
+				justify-content: center;
+				border-top: 1px solid #c8c6c7;
+				align-items: center;
+				border:none;
+}
+
+.div2{
+				display: flex;
+				justify-content: left;
+				align-items: center;
+}
+
+.div1-text{
+				color: black;
+				font-weight: normal;
+				font-size: 1rem;
+}
+
+.div-icons{
+				margin: 0 1rem;
+}
+.icono{
+				color: black;
+}
