@@ -22,7 +22,7 @@ const Email = (props)=>{
 
 				var a = email.search('@')
 
-				const enable = (name !== '' & email !== '' & number !== '' & a>0 ) ? true : false;
+				const enable = (name != '' & email != '' & number != '' & a>0 ) ? true : false;
 				//console.log(enable);
 								
 
