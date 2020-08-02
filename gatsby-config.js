@@ -18,18 +18,6 @@ module.exports = {
                 },
                 `gatsby-plugin-react-helmet`,
                 {
-                        resolve: 'gatsby-source-graphql',
-                        options: {
-                                typeName: 'GitHub',
-                                fieldName: 'github',
-                                url: 'https://api.github.com/graphql',
-                                headers: {
-                                        Authorization: `bearer b4b0b5398f7a73d0534a1212fb6e36cbcb0c792b`,
-                                },
-                                fetchOptions: {},
-                        },
-                },
-                {
                         resolve: `gatsby-source-contentful`,
                         options: {
                                 spaceId: `a35maxjtku05`,
