@@ -50,6 +50,10 @@
 .Menu-icon{
 				color: black;
 }
+.Cname{
+        display: flex;
+        margin: 0 auto;
+}
 
 @media screen and (max-width: 1000px){
 				.nav-ul{
@@ -58,8 +62,5 @@
 				.Menu{
 								display: flex;
 								margin-right: auto;
-				}
-				.Cname{
-								margin: auto;
 				}
 }

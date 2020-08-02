@@ -23,7 +23,7 @@
 }
 
 .header-subtitle{
-				color:#707070;
+				color: #292F34;
 				font-weight: normal;
 				font-size: 32pt;
 }
@@ -41,10 +41,7 @@
 }
 .boton:hover{
 				background: black;
-				border: 2px solid white;
 				color: white;
-				margin: 1em;
-				padding: 0.7em 2em;
 				border-radius: 3px;
 }
 
@@ -64,8 +61,5 @@
 @media screen and (max-width: 450px){
 				.header-subtitle{
 								font-size: 24pt;
-				}
-				.boton{
-								margin-top: 2rem;
 				}
 }

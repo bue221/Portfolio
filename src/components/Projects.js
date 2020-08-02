@@ -5,43 +5,44 @@ import './styles/Projects.css'
 
 const Proyect = ()=>{
 
-				const data = useStaticQuery(graphql`
-				query MyQuery {
-							github {
-									viewer {
-											repositories(first: 8, orderBy: {field: STARGAZERS, direction: DESC}) {
-													edges {
-														node {
-															id
-															createdAt
-															name
-															description
-															owner {
-																login
-																}
-																url
-															}
-														}
-													}
-												}
-											}
-										}
-								`)
+        const data = useStaticQuery(graphql`
+                query{
+                  P:allContentfulProjects{
+                    edges{
+                      node{
+                        id
+                        name
+                        website
+                        repositorio
+                        img{
+                          title
+                          file{
+                            url
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                                `)
 
-				return(
-								<div className='projects' id='projects'>
-												<h1>Projects</h1>
-												<div className='projects-items'>
-																{data.github.viewer.repositories.edges.map(({node})=>(
-																<a href={node.url} target="_blank" className='item' key={node.id} rel="noreferrer">
-																				<p className='projects-name'>{node.name}</p>
-																				<p className='projects-des'>{node.description}</p>
-																				<p className='projects-login'>{node.owner.login}</p>
-																</a>
-																))}
-												</div>
-								</div>
-								);
+        return(
+                <div className='projects' id='projects'>
+                        <h1>Projects</h1>
+                        <div className='projects-items'>
+                                {data.P.edges.map(({node})=>(
+                                <div className='item' key={node.id}>
+                                        <h1>{node.name}</h1>
+                                        <img src={node.img.file.url} alt={node.img.title} className='img'/>
+                                        <div>
+                                                <a href={node.repositorio} className='boton' target='_blank' rel="noreferrer" >Repositories</a>
+                                                {node.website ? <a href={node.website} className='boton' target='_blank' rel="noreferrer" >Website</a>: <p>No existe</p> }
+                                        </div>
+                                </div>
+                                ))}
+                        </div>
+                </div>
+                );
 }
 
 export default Proyect

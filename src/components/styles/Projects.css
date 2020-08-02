@@ -15,6 +15,7 @@
 				font-size: 15pt;
 }
 .item{
+                                text-align: center;
 				display: inline-block;	
 				width: 100%;
 				height: 100%;
@@ -23,7 +24,11 @@
 				text-decoration: none;
 				color: black;
 				padding: .5rem;
-				background: white;
+				background: transparent;
+}
+.img{
+        width: inherit;
+        height: 200px;
 }
 
 @media screen and (max-width: 650px){
@@ -38,6 +43,9 @@
 				.projects{
 								padding: 3rem;
 				}
+        .img{
+                height: 150px;
+        }
 }
 
 .projects-des{
