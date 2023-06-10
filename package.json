@@ -19,7 +19,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "emailjs-com": "^2.6.3",
-    "gatsby": "^2.23.12",
+    "gatsby": "^4.25.7",
     "gatsby-env-variables": "^2.0.0",
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-react-helmet": "^3.3.10",
